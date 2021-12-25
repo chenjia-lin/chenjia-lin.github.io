@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 62%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+.navbar {
+  background-color: #9fe9b7;
+  margin-top: 0.25cm;
+  margin-bottom: 0.25cm;
+  font-family: "Lucida Grande";
+  display:flex;
+  align-items: center;
+}
+
+.navli {
+  display:inline-block;
+  padding:0.25cm;
+  background-color:#B9F4A1;
+  border-color:#e7d413;
+  font-family:"Lucida Grande";
+}
+
+li {
+  display:list-item;
+  float:none;
+  font-family: "Lucida Grande";
+  padding:0.1cm;
+}
+
+a {
+  font-family: "Lucida Grande";
+}
+
+p, h1, h2 {
+  font-family: "Lucida Grande";
+}
+
+table {
+  font-family: "Lucida Grande";
+  padding:0.25cm;
+}
