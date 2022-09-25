@@ -7,7 +7,9 @@ output:
     css: ../custom.css
 ---
 
-In this post, I will introduce the Implicit Function Theorem through the technique of implicit differentiation from single-variable calculus and prove the well-known fact that gradients are perpendicular to level curves. When I first heard about the theorem in my advanced calculus class, I wondered about its connection to implicit differentiation. It all finally clicked when I read about it in the second volume of Courant's *Differential and Integral Calculus* recently. My proof of the theorem is an adaptation of the ones that I encountered in my classes and readings. I will assume a familiarity with derivatives of multivariable functions and the Inverse Function Theorem. 
+In this post, I will introduce the Implicit Function Theorem through the technique of implicit differentiation from single-variable calculus and prove the well-known fact that gradients are perpendicular to level curves. I first heard about the theorem in my advanced calculus class
+and had always wondered about its connection to implicit differentiation. This link finally clicked
+when I encountered it in the second volume of Courant's *Differential and Integral Calculus* recently. My proof of the theorem is an adaptation of the ones that I encountered in my classes and readings. I will assume a familiarity with derivatives of multivariable functions and the Inverse Function Theorem. 
 
 ## Motivation
 
@@ -47,7 +49,7 @@ In other words, if the derivative of $F$ at a point on $\{F=0\}$ does not vanish
 
 <details class="latex"> 
 <summary><b>Proof.</b></summary>
-
+<div>
 Suppose that $F:U\to \mathbb{R}$ is continuously differentiable at $p=(a_1,\dots,a_n,b)\in U$ and $F(p)=0$. We have
 $$
   \nabla F(p) = 
@@ -114,7 +116,9 @@ $$
 \end{align*}
 $$
 and therefore $0 = F(x_1,\dots,x_n,f(x_1,\dots,x_n))$.
+</div>
 </details>
+
 
 In our opening example, the set of points $(x,y)\in\mathbb{R}^2$ satisfying $x^2+3xy+y^2=5$ is equal to the level set $\{F=0\}$ for 
 $$ F(x,y) = x^2+3xy+y^2.$$ 

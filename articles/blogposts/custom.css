@@ -1,0 +1,11 @@
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border-left: 5px solid #eee;
+}
+
+details > div {
+    padding: 10px 20px;
+    border: 2px solid #eee;
+}

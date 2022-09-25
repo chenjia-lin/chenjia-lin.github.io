@@ -260,6 +260,10 @@ padding: 10px 20px;
 margin: 0 0 20px;
 font-size: 14px;
 border-left: 5px solid #eee;
+}
+details > div {
+padding: 10px 20px;
+border: 2px solid #eee;
 }</style>
 
 
@@ -376,7 +380,7 @@ summary {
 </div>
 
 
-<p>In this post, I will introduce the Implicit Function Theorem through the technique of implicit differentiation from single-variable calculus and prove the well-known fact that gradients are perpendicular to level curves. When I first heard about the theorem in my advanced calculus class, I wondered about its connection to implicit differentiation. It all finally clicked when I read about it in the second volume of Courant’s <em>Differential and Integral Calculus</em> recently. My proof of the theorem is an adaptation of the ones that I encountered in my classes and readings. I will assume a familiarity with derivatives of multivariable functions and the Inverse Function Theorem.</p>
+<p>In this post, I will introduce the Implicit Function Theorem through the technique of implicit differentiation from single-variable calculus and prove the well-known fact that gradients are perpendicular to level curves. I first heard about the theorem in my advanced calculus class and had always wondered about its connection to implicit differentiation. This link finally clicked when I encountered it in the second volume of Courant’s <em>Differential and Integral Calculus</em> recently. My proof of the theorem is an adaptation of the ones that I encountered in my classes and readings. I will assume a familiarity with derivatives of multivariable functions and the Inverse Function Theorem.</p>
 <div id="motivation" class="section level2">
 <h2>Motivation</h2>
 <p>Let’s begin with a routine problem from calculus I.</p>
@@ -404,7 +408,8 @@ summary {
 </div>
 <p>In other words, if the derivative of <span class="math inline">\(F\)</span> at a point on <span class="math inline">\(\{F=0\}\)</span> does not vanish, then <span class="math inline">\(\{F=0\}\)</span> is locally the graph of a function <span class="math inline">\(f\)</span> near the point. A proof of the theorem is given below, but feel free to skip it for now.</p>
 <details class="latex">
-<p><summary><b>Proof.</b></summary></p>
+<summary><b>Proof.</b></summary>
+<div>
 Suppose that <span class="math inline">\(F:U\to \mathbb{R}\)</span> is continuously differentiable at <span class="math inline">\(p=(a_1,\dots,a_n,b)\in U\)</span> and <span class="math inline">\(F(p)=0\)</span>. We have <span class="math display">\[
   \nabla F(p) = 
   \begin{pmatrix}
@@ -431,7 +436,7 @@ Suppose that <span class="math inline">\(F:U\to \mathbb{R}\)</span> is continuou
 <li>a neighborhood <span class="math inline">\(V\times \widehat{V}\subseteq \mathbb{R}^n\times\mathbb{R}\)</span> of <span class="math inline">\(G(p)\)</span>,</li>
 <li>and an inverse function <span class="math inline">\(G^{-1}\)</span> of <span class="math inline">\(G\)</span> such that <span class="math inline">\(G^{-1}\circ G\)</span> and <span class="math inline">\(G\circ G^{-1}\)</span> are the identities on <span class="math inline">\(W\times \widehat{W}\)</span> and <span class="math inline">\(V\times\widehat{V}\)</span>, respectively.</li>
 </ul>
-It follows that <span class="math display">\[
+<p>It follows that <span class="math display">\[
 \begin{align*}
   (x_1,\dots,x_n,y) &amp;=
   G^{-1}\circ G(x_1,\dots,x_n,y)\\
@@ -451,7 +456,8 @@ It follows that <span class="math display">\[
   (x_1,\dots,x_n,0) &amp;= G(x_1,\dots,x_n,f(x_1,\dots,x_n))\\
   &amp;= (x_1,\dots,x_n,F(x_1,\dots,x_n,f(x_1,\dots,x_n)))
 \end{align*}
-\]</span> and therefore <span class="math inline">\(0 = F(x_1,\dots,x_n,f(x_1,\dots,x_n))\)</span>.
+\]</span> and therefore <span class="math inline">\(0 = F(x_1,\dots,x_n,f(x_1,\dots,x_n))\)</span>.</p>
+</div>
 </details>
 <p>In our opening example, the set of points <span class="math inline">\((x,y)\in\mathbb{R}^2\)</span> satisfying <span class="math inline">\(x^2+3xy+y^2=5\)</span> is equal to the level set <span class="math inline">\(\{F=0\}\)</span> for <span class="math display">\[ F(x,y) = x^2+3xy+y^2.\]</span> The derivative of <span class="math inline">\(F\)</span> at <span class="math inline">\((1,1)\)</span> is equal to <span class="math display">\[ \nabla F(1,1) = \begin{pmatrix}2x+3y &amp; 3x+2y\end{pmatrix}\Big|_{(1,1)} = \begin{pmatrix}5 &amp; 5\end{pmatrix},\]</span> which is surjective because one of the entries is nonzero. And so, the Implicit Function Theorem applies and tells us that <span class="math inline">\(y=f(x)\)</span> for some differentiable function <span class="math inline">\(f\)</span> around <span class="math inline">\((1,1)\)</span>.</p>
 </div>
