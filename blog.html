@@ -20,10 +20,30 @@
     </nav>
   </header>
 
+  <!--MathJax-->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+
   <body>
     <h1>Blog</h1>
 
     <ul>
+      <li><a href="articles/blogposts/dual-1-forms/duals-1-forms.md"><em>Dual vectors and an introduction to 1-forms</em></a> (Sep. 2022)
+        <ul>
+          <li>This post is under construction; any feedback/comments will be appreciated!</li>
+        </ul>
+      </li>
       <li><a href="articles/blogposts/implicit-fcn-thm/implicit-fcn-thm.html"><em>Implicit differentiation meets the Implicit Function Theorem</em></a> (Aug. 7, 2022) </li>
       <li><a href="articles/blogposts/tensor_notes.pdf"><em>Tensors and Multilinear Algebra</em></a> (updated Jan. 3, 2022)
         <ul>
