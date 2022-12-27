@@ -1,4 +1,11 @@
-# Dual vectors and an introduction to $1$-forms
+---
+title: "Dual vectors and an introduction to 1-forms"
+author: "Chenjia Lin"
+date: "September 2022"
+output: 
+  html_document:
+    css: ../custom.css
+---
 
 This is the first post in a series (hopefully?) on differential forms. I will motivate the concept of a $1$-form as an object dual to vector fields. The first part of the post presents a crash course on dual vectors, while the second part builds a framework for $1$-forms and later discussions on $k$-forms. This post was inspired by the exposition on differential forms in Barrett O'Neil's *Elementary Differential Geometry*.
 
