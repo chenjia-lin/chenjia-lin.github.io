@@ -51,7 +51,7 @@ And so, if $f(\mathbf{x})=0$, then $\mathbf{x}$ is orthogonal to $\mathbf{v}$ an
 
 Our observation about dual vectors and the dot product on $\mathbb{R}^n$ generalizes to inner product spaces via Riesz's Representation Theorem:
 
-> **Theorem (Riez).**
+> **Theorem (Riesz).**
 > Let $V$ be a vector space with an inner product $\langle \cdot,\cdot\rangle$. If $f: V\to \mathbb{R}$ a continuous linear functional, then there is a unique $w\in V$ such that $f(v) = \langle v,w\rangle$ for all $v\in V$. 
 
 Note that $V$ here could be infinite-dimensional. When this occurs, not all linear functionals on $V$ are continuous! The theorem is proven in full generality in Bisgard. If $V$ happens to be finite-dimensional, then we have a rather straightforward proof.
